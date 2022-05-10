@@ -1,0 +1,8 @@
+{
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "eslint.workingDirectories": ["./{PATH_TO_CLIENT}"],
+}
