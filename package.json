@@ -1,7 +1,8 @@
 {
   "name": "bilibili-tool-v3",
   "version": "1.0.0",
-  "description": "chrome插件v3",
+  "description": "bilibili-tool chrome插件v3",
+  "author": "tuntun",
   "main": "index.js",
   "license": "AGPL-3.0",
   "scripts": {
@@ -10,10 +11,20 @@
     "watch": "vite build --watch"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
     "@vitejs/plugin-vue": "^2.3.2",
+    "chalk": "^5.0.1",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-vue": "^8.7.1",
-    "vite": "^2.9.8"
+    "fs-extra": "^10.1.0",
+    "vite": "^2.9.8",
+    "vite-plugin-chrome-extension": "^0.0.7",
+    "vite-plugin-vue-crx3": "^1.0.8"
+  },
+  "dependencies": {
+    "element-plus": "^2.2.0",
+    "lodash": "^4.17.21",
+    "vue": "^3.2.33"
   }
 }

@@ -10,8 +10,14 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 	},
-	plugins: ['vue'],
+	plugins: [],
 	rules: {
+		'no-unused-vars': [
+			'error',
+			{
+				argsIgnorePattern: '^_',
+			},
+		],
 		indent: ['error', 'tab'],
 		'linebreak-style': ['warn', 'unix'],
 		quotes: ['error', 'single'],
@@ -28,13 +34,17 @@ module.exports = {
 		'no-lone-blocks': ['error'],
 		'no-multi-spaces': ['error'],
 		'no-multi-str': ['error'],
-		'no-self-assign': ['error'],
 		'no-sequences': ['error'],
 		radix: ['error'],
 		'comma-dangle': ['error', 'always-multiline'],
 		'block-spacing': ['error'],
 		'brace-style': ['error'],
-		camelcase: ['error'],
+		camelcase: [
+			'error',
+			{
+				properties: 'never',
+			},
+		],
 		'comma-spacing': ['error'],
 		'eol-last': ['error'],
 		'key-spacing': [
@@ -54,7 +64,7 @@ module.exports = {
 			},
 		],
 		'new-cap': ['error'],
-		'no-lonely-if': ['error'],
+		// 'no-lonely-if': ['error'],
 		'no-multiple-empty-lines': [
 			'error',
 			{
@@ -76,5 +86,6 @@ module.exports = {
 		'prefer-arrow-callback': ['error'],
 		'prefer-const': ['warn'],
 		'prefer-destructuring': ['warn'],
+		'no-whitespace-before-property': ['error'],
 	},
 };
